@@ -1,0 +1,28 @@
+   while len(change_list):
+        if(change_list == file_list)
+        change_list
+
+
+
+
+import shutil
+import os, glob
+from pathlib import Path
+
+test_image_path=os.getenv("HOME") + "/SUBMIT_MISSION_GIT/ex1_RPC/ModelPic/Test/rock_scissor_paper"
+file_path = "/paper", "/rock", "/scissor"
+
+index = 0
+
+file_list = os.listdir(os.getenv("HOME") + "/SUBMIT_MISSION_GIT/ex1_RPC/ModelPic/Test/rock_scissor_paper/Test")
+
+print(len(file_list))
+
+for path in file_path :
+    
+    change_list = os.listdir(os.getenv("HOME") + "/SUBMIT_MISSION_GIT/ex1_RPC/ModelPic/Test/rock_scissor_paper"+path)
+
+    while len(change_list):
+        shutil.copyfile(test_image_path+file_path, test_image_path+"/Test")
+        
+
