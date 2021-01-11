@@ -25,4 +25,5 @@ for path in file_path :
     while len(change_list):
         shutil.copyfile(test_image_path+file_path, test_image_path+"/Test")
         
-
+for path in file_path :
+    image_files=glob.glob(train_image_path + file_path + "/*.jpg")
